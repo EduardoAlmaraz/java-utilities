@@ -47,7 +47,7 @@ curl http://localhost:8080/
 Al realizar la invocación del servicio deberá mostar una salida de bitácora como la siguiente:
 
 ``` log
-03-02-2021 12:17:18.945 [http-nio-8080-exec-1] INFO  com.example.HelloController.hello - <password>****</password>
+03-02-2021 12:17:18.945 [http-nio-8080-exec-1] INFO  com.almaraze.HelloController.hello - <password>****</password>
 ```
 
 # Referencia
