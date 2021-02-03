@@ -13,7 +13,11 @@ public class HelloController {
     @RequestMapping("/")
     String hello() {
 
+        // Se pinta en el log la etiqueta <password>mi password</password>, al ser revisada por la función %replace
+        // la cambiará por *****
+        // Output: <password>****</password>
         log.info("<password>mi password</password>");
+        
         return "Hello World!";
     }
 }
