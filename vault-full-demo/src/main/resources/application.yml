@@ -9,13 +9,9 @@ spring:
     name: vault
   cloud:
     vault:
-      generic:
-        enabled: false
-      kv:
-        enabled: true
       fail-fast: true
       host: localhost
-      port: 18200
+      port: 8200
       scheme: http
       read-timeout: 10000
       connection-timeout: 10000
