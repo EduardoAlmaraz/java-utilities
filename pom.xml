@@ -11,6 +11,7 @@
 	<modules>
 		<module>logging-replace</module>
 		<module>vault-full-demo</module>
+		<module>jasypt-demo</module>
 	</modules>
 
 	<properties>

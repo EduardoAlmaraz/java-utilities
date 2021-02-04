@@ -1,0 +1,7 @@
+app:
+  variable:
+    mi-mensaje-en-texto-claro: Este mensaje es visible en application.yml
+    mi-mensaje-encriptado: ENC(a0pCF2Xx/4ETksyKJb14f15nIkSYVKtrQeB0QDIhgMu4nTys8gKduXoMKKPtWP0bgtPRg3t+xh8=)
+jasypt:
+  encryptor:
+    bean: encryptorBean
