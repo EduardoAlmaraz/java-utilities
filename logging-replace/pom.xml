@@ -10,7 +10,7 @@
 
     <groupId>com.almaraze</groupId>
     <artifactId>logging-replace</artifactId>
-    <version>1.0</version>
+    <version>1.0.0</version>
     <packaging>jar</packaging>
     <name>logging-replace</name>
     <description>Enmascaramiento de password en bitácora</description>
