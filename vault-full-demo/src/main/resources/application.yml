@@ -1,0 +1,47 @@
+debug: true
+spring:
+  profiles:
+    active: development
+  output:
+    ansi:
+      enabled: always
+  application:
+    name: vault
+  cloud:
+    vault:
+      generic:
+        enabled: false
+      kv:
+        enabled: true
+      fail-fast: true
+      host: localhost
+      port: 18200
+      scheme: http
+      read-timeout: 10000
+      connection-timeout: 10000
+      authentication: APPROLE
+      app-role:
+        app-role-path: approle
+        role: vault
+        # Generar el role_id en el servicio de VAULT
+        role-id: ROLE_ID
+        # Generar el secret_id en el servicio de VAULT
+        secret-id: SECRET_ID
+      # ssl:
+      #  trust-store: ${VAULT_TRUST_STORE}
+      #  trust-store-password: ${VAULT_TRUST_STORE_PSWD}
+logging:
+  config: classpath:logback-spring.xml
+
+server:
+    port: 8181
+
+# ======================================
+# = Habilitar los ENDPOINTS de actuator
+# = incluyendo todos
+# ======================================
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
