@@ -119,8 +119,8 @@ Por último se verifica el funcionamiento del servicio accediendo a [http://loca
 
 ``` json
 {
-	"foo": "Mi secreto foo guardado en Docker",
-	"bar": "Mi secreto bar guardado en Docker"
+  "foo": "Mi secreto foo guardado en Docker",
+  "bar": "Mi secreto bar guardado en Docker"
 }
 ```
 
