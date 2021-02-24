@@ -9,14 +9,14 @@ import lombok.Setter;
 @Getter
 @Setter
 public class AppProperties {
+    
+    /**
+     * Propiedades privadas
+     */
+    private AppPrivateProperties appPrivateProperties;
 
     /**
-     * Application property foo
+     * Propiedades publicas
      */
-    private String foo;
-
-    /**
-     * Application property bar
-     */
-    private String bar;
+    private AppPublicProperties appPublicProperties;
 }
